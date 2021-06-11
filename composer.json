@@ -17,9 +17,9 @@
   ],
   "require": {
     "php": "^7.4|^8.0",
-    "guzzlehttp/guzzle": "^7.3",
-    "illuminate/support": "^8.0",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "guzzlehttp/guzzle": "~6.0@dev",
+    "illuminate/support": "^8.0"
   },
   "require-dev": {
     "orchestra/testbench": "^6.0",
