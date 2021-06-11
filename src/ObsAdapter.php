@@ -12,15 +12,15 @@ class ObsAdapter extends AbstractAdapter
     /**
      * @var
      */
-    protected string $endpoint;
+    protected  $endpoint;
     /**
      * @var
      */
-    protected string $cdnDomain;
+    protected  $cdnDomain;
     /**
      * @var
      */
-    protected string $ssl;
+    protected  $ssl;
     /**
      * @var string
      */
@@ -35,7 +35,7 @@ class ObsAdapter extends AbstractAdapter
      *
      * @param  string  $bucket
      */
-    public function __construct(ObsClient $client, string $bucket, string $endpoint, string $cdnDomain, string $ssl)
+    public function __construct(ObsClient $client, string $bucket,  $endpoint,  $cdnDomain,  $ssl)
     {
         $this->client = $client;
         $this->bucket = $bucket;
