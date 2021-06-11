@@ -13,7 +13,17 @@ class ObsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Storage::extend('obs', function ($app, $config) {
 
+            $client = new ObsClient($config);
+
+            $bucket = $config['bucket'] ?? null;
+            $endpoint = $config['endpoint'] ?? null;
+            $ssl = $config['ssl'] ?? null;
+            $cdnDomain = $config['cdnDomain'] ?? null;
+
+            return new Filesystem(new ObsAdapter($client, $bucket, $endpoint, $cdnDomain, $ssl));
+        });
     }
 
     /**
@@ -21,14 +31,6 @@ class ObsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        Storage::extend('obs', function ($app, $config) {
 
-            $client = new ObsClient($config);
-
-            $bucket = $config['bucket'] ?? null;
-            $endpoint = $config['endpoint'] ?? null;
-
-            return new Filesystem(new ObsAdapter($client, $bucket, $endpoint));
-        });
     }
 }

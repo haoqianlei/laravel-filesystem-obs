@@ -10,10 +10,21 @@ use League\Flysystem\Config;
 class ObsAdapter extends AbstractAdapter
 {
     /**
+     * @var
+     */
+    protected string $endpoint;
+    /**
+     * @var
+     */
+    protected string $cdnDomain;
+    /**
+     * @var
+     */
+    protected string $ssl;
+    /**
      * @var string
      */
     private string $bucket;
-
     /**
      * @var ObsClient
      */
@@ -24,10 +35,33 @@ class ObsAdapter extends AbstractAdapter
      *
      * @param  string  $bucket
      */
-    public function __construct(ObsClient $client, string $bucket)
+    public function __construct(ObsClient $client, string $bucket, string $endpoint, string $cdnDomain, string $ssl)
     {
         $this->client = $client;
         $this->bucket = $bucket;
+        $this->endpoint = $endpoint;
+        $this->cdnDomain = $cdnDomain;
+        $this->ssl = $ssl;
+    }
+
+    /**
+     * @param $path
+     * @return string
+     */
+    public function getUrl($path)
+    {
+        return ($this->ssl ? 'https://' : 'http://')
+            .($this->cdnDomain == '' ? $this->getBucket().'.'.$this->endpoint : $this->cdnDomain)
+            .'/'.ltrim($path, '/');
+    }
+
+    /**
+     * get bucket
+     * @return string
+     */
+    public function getBucket()
+    {
+        return $this->bucket;
     }
 
     /**
@@ -65,15 +99,6 @@ class ObsAdapter extends AbstractAdapter
             return false;
         }
 
-    }
-
-    /**
-     * get bucket
-     * @return string
-     */
-    public function getBucket()
-    {
-        return $this->bucket;
     }
 
     /**
