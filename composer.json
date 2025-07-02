@@ -1,5 +1,5 @@
 {
-    "name": "luoyy/huawei-obs-storage",
+    "name": "back/huawei-obs-storage",
     "description": "huawei obs filesystem storage for laravel 9+",
     "keywords": [
         "huawei",
@@ -8,12 +8,12 @@
         "filesystems",
         "storage"
     ],
-    "homepage": "https://github.com/zishang520/huawei-obs-storage",
+    "homepage": "https://github.com/haoqianlei/laravel-filesystem-obs",
     "license": "MIT",
     "authors": [
         {
-            "name": "luoyy",
-            "email": "zishang520@gmail.com"
+            "name": "back",
+            "email": "haoqianlei@gmail.com"
         }
     ],
     "require": {
@@ -25,13 +25,13 @@
     },
     "autoload": {
         "psr-4": {
-            "luoyy\\HuaweiOBS\\": "src/"
+            "back\\HuaweiOBS\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "luoyy\\HuaweiOBS\\Providers\\HuaweiObsServiceProvider"
+                "back\\HuaweiOBS\\Providers\\HuaweiObsServiceProvider"
             ]
         }
     }
