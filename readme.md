@@ -7,16 +7,16 @@
 ## Installation
 In order to install HuaweiOBS-storage, just add
 
-    "luoyy/huawei-obs-storage": "^1.0"
+    "back/huawei-obs-storage": "^1.0"
 
 to your composer.json. Then run `composer install` or `composer update`.  
 Or you can simply run below command to install:
 
-    "composer require luoyy/huawei-obs-storage:^1.0"
+    "composer require back/huawei-obs-storage:^1.0"
     
 Then in your `config/app.php` add this line to providers array:
 ```php
-luoyy\HuaweiOBS\HuaweiObsServiceProvider::class,
+back\HuaweiOBS\HuaweiObsServiceProvider::class,
 ```
 ## Configuration
 Add the following in `app/filesystems.php`:
