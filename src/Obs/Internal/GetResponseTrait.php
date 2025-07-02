@@ -14,15 +14,15 @@
  * specific language governing permissions and limitations under the License.
  */
 
-namespace luoyy\HuaweiOBS\Obs\Internal;
+namespace back\HuaweiOBS\Obs\Internal;
 
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use luoyy\HuaweiOBS\Obs\Internal\Common\CheckoutStream;
-use luoyy\HuaweiOBS\Obs\Internal\Common\Model;
-use luoyy\HuaweiOBS\Obs\Internal\Resource\OBSConstants;
-use luoyy\HuaweiOBS\Obs\ObsException;
+use back\HuaweiOBS\Obs\Internal\Common\CheckoutStream;
+use back\HuaweiOBS\Obs\Internal\Common\Model;
+use back\HuaweiOBS\Obs\Internal\Resource\OBSConstants;
+use back\HuaweiOBS\Obs\ObsException;
 use Psr\Http\Message\StreamInterface;
 
 trait GetResponseTrait

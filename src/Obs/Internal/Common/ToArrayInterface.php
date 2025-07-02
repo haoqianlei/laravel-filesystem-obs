@@ -14,7 +14,7 @@
  * specific language governing permissions and limitations under the License.
  */
 
-namespace luoyy\HuaweiOBS\Obs\Internal\Common;
+namespace back\HuaweiOBS\Obs\Internal\Common;
 
 interface ToArrayInterface
 {

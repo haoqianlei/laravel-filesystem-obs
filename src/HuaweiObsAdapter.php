@@ -1,6 +1,6 @@
 <?php
 
-namespace luoyy\HuaweiOBS;
+namespace back\HuaweiOBS;
 
 use Carbon\Carbon;
 use Illuminate\Support\Arr;
@@ -25,10 +25,10 @@ use League\Flysystem\UnableToSetVisibility;
 use League\Flysystem\UnableToWriteFile;
 use League\MimeTypeDetection\FinfoMimeTypeDetector;
 use League\MimeTypeDetection\MimeTypeDetector;
-use luoyy\HuaweiOBS\Contracts\PortableVisibilityConverter;
-use luoyy\HuaweiOBS\Contracts\VisibilityConverter;
-use luoyy\HuaweiOBS\Obs\ObsClient;
-use luoyy\HuaweiOBS\Obs\ObsException;
+use back\HuaweiOBS\Contracts\PortableVisibilityConverter;
+use back\HuaweiOBS\Contracts\VisibilityConverter;
+use back\HuaweiOBS\Obs\ObsClient;
+use back\HuaweiOBS\Obs\ObsException;
 
 class HuaweiObsAdapter implements FilesystemAdapter
 {

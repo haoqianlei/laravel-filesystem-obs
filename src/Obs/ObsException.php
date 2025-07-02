@@ -14,7 +14,7 @@
  * specific language governing permissions and limitations under the License.
  */
 
-namespace luoyy\HuaweiOBS\Obs;
+namespace back\HuaweiOBS\Obs;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;

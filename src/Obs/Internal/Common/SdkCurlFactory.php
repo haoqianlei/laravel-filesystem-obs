@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-namespace luoyy\HuaweiOBS\Obs\Internal\Common;
+namespace back\HuaweiOBS\Obs\Internal\Common;
 
 use GuzzleHttp\Handler\CurlFactoryInterface;
 use GuzzleHttp\Handler\EasyHandle;

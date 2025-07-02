@@ -1,9 +1,9 @@
 <?php
 
-namespace luoyy\HuaweiOBS\Obs\Internal\Common;
+namespace back\HuaweiOBS\Obs\Internal\Common;
 
 use GuzzleHttp\Psr7\StreamDecoratorTrait;
-use luoyy\HuaweiOBS\Obs\ObsException;
+use back\HuaweiOBS\Obs\ObsException;
 use Psr\Http\Message\StreamInterface;
 
 class CheckoutStream implements StreamInterface

@@ -1,13 +1,13 @@
 <?php
 
-namespace luoyy\HuaweiOBS\Providers;
+namespace back\HuaweiOBS\Providers;
 
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\ServiceProvider;
 use League\Flysystem\Config;
 use League\Flysystem\Filesystem;
-use luoyy\HuaweiOBS\HuaweiObsAdapter;
-use luoyy\HuaweiOBS\Obs\ObsClient;
+use back\HuaweiOBS\HuaweiObsAdapter;
+use back\HuaweiOBS\Obs\ObsClient;
 
 class HuaweiObsServiceProvider extends ServiceProvider
 {

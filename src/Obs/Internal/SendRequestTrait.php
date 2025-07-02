@@ -1,6 +1,6 @@
 <?php
 
-namespace luoyy\HuaweiOBS\Obs\Internal;
+namespace back\HuaweiOBS\Obs\Internal;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
@@ -9,13 +9,13 @@ use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use luoyy\HuaweiOBS\Obs\Internal\Common\Model;
-use luoyy\HuaweiOBS\Obs\Internal\Resource\Constants;
-use luoyy\HuaweiOBS\Obs\Internal\Resource\OBSConstants;
-use luoyy\HuaweiOBS\Obs\Internal\Resource\OBSRequestResource;
-use luoyy\HuaweiOBS\Obs\Internal\Signature\DefaultSignature;
-use luoyy\HuaweiOBS\Obs\ObsClient;
-use luoyy\HuaweiOBS\Obs\ObsException;
+use back\HuaweiOBS\Obs\Internal\Common\Model;
+use back\HuaweiOBS\Obs\Internal\Resource\Constants;
+use back\HuaweiOBS\Obs\Internal\Resource\OBSConstants;
+use back\HuaweiOBS\Obs\Internal\Resource\OBSRequestResource;
+use back\HuaweiOBS\Obs\Internal\Signature\DefaultSignature;
+use back\HuaweiOBS\Obs\ObsClient;
+use back\HuaweiOBS\Obs\ObsException;
 use Psr\Http\Message\StreamInterface;
 
 trait SendRequestTrait

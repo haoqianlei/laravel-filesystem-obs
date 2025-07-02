@@ -1,6 +1,6 @@
 <?php
 
-namespace luoyy\HuaweiOBS\Obs\Internal\Common;
+namespace back\HuaweiOBS\Obs\Internal\Common;
 
 class Model implements \Stringable, \ArrayAccess, \IteratorAggregate, \Countable, ToArrayInterface
 {

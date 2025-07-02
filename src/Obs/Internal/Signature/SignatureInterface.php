@@ -14,9 +14,9 @@
  * specific language governing permissions and limitations under the License.
  */
 
-namespace luoyy\HuaweiOBS\Obs\Internal\Signature;
+namespace back\HuaweiOBS\Obs\Internal\Signature;
 
-use luoyy\HuaweiOBS\Obs\Internal\Common\Model;
+use back\HuaweiOBS\Obs\Internal\Common\Model;
 
 interface SignatureInterface
 {

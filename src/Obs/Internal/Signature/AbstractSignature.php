@@ -14,14 +14,14 @@
  * specific language governing permissions and limitations under the License.
  */
 
-namespace luoyy\HuaweiOBS\Obs\Internal\Signature;
+namespace back\HuaweiOBS\Obs\Internal\Signature;
 
 use GuzzleHttp\Psr7\Stream;
-use luoyy\HuaweiOBS\Obs\Internal\Common\Model;
-use luoyy\HuaweiOBS\Obs\Internal\Common\ObsTransform;
-use luoyy\HuaweiOBS\Obs\Internal\Common\SchemaFormatter;
-use luoyy\HuaweiOBS\Obs\Internal\Resource\OBSConstants;
-use luoyy\HuaweiOBS\Obs\ObsException;
+use back\HuaweiOBS\Obs\Internal\Common\Model;
+use back\HuaweiOBS\Obs\Internal\Common\ObsTransform;
+use back\HuaweiOBS\Obs\Internal\Common\SchemaFormatter;
+use back\HuaweiOBS\Obs\Internal\Resource\OBSConstants;
+use back\HuaweiOBS\Obs\ObsException;
 use Psr\Http\Message\StreamInterface;
 
 abstract class AbstractSignature implements SignatureInterface

@@ -1,6 +1,6 @@
 <?php
 
-namespace luoyy\HuaweiOBS\Contracts;
+namespace back\HuaweiOBS\Contracts;
 
 use League\Flysystem\Visibility;
 
